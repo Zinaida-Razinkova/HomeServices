@@ -1,0 +1,136 @@
+.faq {
+    padding-top: 190px;
+    padding-bottom: 230px;
+
+    @media screen and (max-width: 1440px) {
+        padding: 50px 0;
+    }
+}
+
+.container__faq {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+
+    @media screen and (min-width: 1280px) {
+        gap: 138px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+}
+
+.faq__block {
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+        margin: 0 auto;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+.faq__title {
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+
+        }
+    }
+}
+
+.faq__text {
+    font-size: 20px;
+
+    @media screen and (max-width: 1023.98px) {
+        font-size: 18px;
+    }
+}
+
+.faq__link {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    text-decoration-line: underline;
+    color: #15B2F5;
+    margin-left: 11px;
+
+    @media screen and (max-width: 1023.98px) {
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+.faq__content li {
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+}
+
+.faq__spoiler {
+    border-radius: 12px;
+
+    padding: 24px 32px;
+
+    &:not(:last-child) {
+        margin-bottom: 36px;
+    }
+
+    &[open] {
+        background-color: #F3F5F9;
+
+        .faq__spoiler-title {
+            &::after {
+                transform: rotate(-180deg);
+            }
+        }
+
+
+    }
+
+    @media screen and (max-width: 425px) {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.faq__spoiler-title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 12px;
+
+    color: $textcolor2;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+
+    @media screen and (max-width: 767.98px) {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &::after {
+        content: "";
+        flex: 0 0 32px;
+        width: 32px;
+        height: 32px;
+        background: url(../images/faq/arrow-down.svg) 0 0 no-repeat;
+        transition: all 0.3s ease 0s;
+    }
+}
+
+.faq__spoiler-text {
+    max-width: 1100px;
+    color: #737373;
+    font-size: 16px;
+}

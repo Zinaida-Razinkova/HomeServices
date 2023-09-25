@@ -1,0 +1,52 @@
+{
+"items": [
+    {
+        "id": 1,
+        "image": "images/blog/img01.png",
+        "title": "Understanding Smart Home Systems & Maintenance",
+        "url": "https://index.html",
+        "date":"19 Jan 2023",
+        "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+        "tags": {
+              "Plumbing": "https://index.html",
+              "Architecture": "https://index.html"
+
+        }
+    },
+    {
+        "id": 2,
+        "image": "images/blog/img02.png",
+        "title": "The Ultimate Guide to Home Repairs and Renovations",
+        "url": "https://index.html",
+        "date":"25 Jan 2023",
+        "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+        "tags": {
+              "Plumbing": "https://index.html",
+              "Architecture": "https://index.html"
+        }
+    },
+     {
+        "id": 3,
+        "image": "images/blog/img03.png",
+        "title": "Painting Techniques for a Kitchen Refresh",
+        "url": "https://index.html",
+        "date":"12 Jan 2023",
+        "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+        "tags": {
+              "Maintenance": "https://index.html"
+        }
+    },
+    {
+        "id": 4,
+        "image": "images/blog/img01.png",
+        "title": "Understanding Smart Home Systems & Maintenance",
+        "url": "https://index.html",
+        "date":"19 Jan 2023",
+        "text": "Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights, practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!",
+        "tags": {
+              "Plumbing": "https://index.html",
+              "Maintenance": "https://index.html"
+        }
+    }
+]
+}

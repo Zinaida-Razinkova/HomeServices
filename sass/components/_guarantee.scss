@@ -1,0 +1,208 @@
+.guarantee {
+    position: relative;
+}
+
+.guarantee__decor {
+    position: relative;
+}
+
+.guarantee__decor-left {
+    background: url(../images/guarantee/decor-left.png) no-repeat;
+    position: absolute;
+    top: 14%;
+    left: 0;
+    height: 645px;
+    width: 45px;
+
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+}
+
+.guarantee__decor-right {
+    background: url(../images/guarantee/decor-right.png) no-repeat;
+    position: absolute;
+    top: 14%;
+    right: 0;
+    height: 645px;
+    width: 45px;
+
+    @media screen and (max-width: 425px) {
+        display: none;
+    }
+}
+
+.guarantee__container {
+
+    background-color: $primary-color;
+    border-radius: 24px;
+    padding: 64px 180px;
+
+    @media screen and (max-width: 1440px) {
+        padding: 34px 80px;
+    }
+
+    @media screen and (max-width: 475px) {
+        padding: 32px;
+    }
+
+    @media screen and (max-width: 425px) {
+        text-align: center;
+    }
+}
+
+.guarantee__wrapp {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    gap: 80px;
+
+    @media screen and (min-width: 1440px) {
+        &:not(:last-child) {
+            padding-bottom: 60px;
+        }
+    }
+
+    @media screen and (max-width: 1440px) {
+        gap: 60px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+    }
+
+    @media screen and (min-width: 475px) {
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, rgba(79, 102, 183, 0) 0%, rgba(78, 101, 182, 1) 50%, rgba(79, 102, 183, 0) 100%);
+        }
+
+        &:not(:last-child) {
+            padding-bottom: 40px;
+        }
+    }
+
+    @media screen and (max-width: 474.98px) {
+        &:not(:last-child) {
+            padding-bottom: 0px;
+            margin-bottom: 40px;
+        }
+    }
+
+}
+
+.guarantee__title {
+    font-family: inherit;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.23;
+    color: #fff;
+
+    @media screen and (max-width: 1700px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        font-size: 24px;
+        line-height: 1.33;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
+}
+
+.guarantee__text {
+    color: #9EA3B5;
+
+    @media screen and (min-width: 1025px) {
+        max-width: 613px;
+    }
+
+    @media screen and (max-width: 768px) {
+        &:not(:last-child) {
+            margin-bottom: 52px;
+        }
+    }
+}
+
+.guarantee__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 184px;
+    row-gap: 60px;
+
+    @media screen and (max-width: 1440px) {
+        column-gap: 100px;
+        row-gap: 40px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (min-width: 1440px) {
+        padding-top: 60px;
+    }
+
+    @media screen and (min-width: 475px) {
+        padding-top: 40px;
+    }
+
+}
+
+.guarantee__block {
+    display: flex;
+    align-items: start;
+    column-gap: 32px;
+
+    @media screen and (max-width: 425px) {
+        flex-wrap: wrap;
+    }
+}
+
+.guarantee__block-img {
+    width: 100px;
+    height: 100px;
+
+    @media screen and (max-width: 425px) {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        margin-bottom: 12px;
+    }
+}
+
+.guarantee__block-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    color: #fff;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        font-size: 20px;
+    }
+}
+
+.guarantee__block-text {
+    max-width: 496px;
+    color: #9EA3B5;
+}

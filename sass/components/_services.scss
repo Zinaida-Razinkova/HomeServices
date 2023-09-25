@@ -1,0 +1,131 @@
+.services {
+    padding: 100px 0;
+
+    @media screen and (max-width: 1440px) {
+        padding: 30px 0;
+    }
+}
+
+.services__title {
+    text-align: center;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+
+        @media screen and (max-width: 475px) {
+            margin-bottom: 12px;
+        }
+    }
+
+}
+
+.services__text {
+    max-width: 552px;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 60px;
+
+        @media screen and (max-width: 499.75px) {
+            margin-bottom: 32px;
+            text-align: center;
+        }
+    }
+}
+
+.services__content {
+    display: grid;
+
+    @media screen and (max-width: 499.98px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media screen and (min-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (min-width: 1024px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media screen and (min-width: 1440px) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.services__block {
+    @media screen and (min-width: 500px) {
+        max-width: 260px;
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 360px;
+        padding: 32px;
+    }
+
+    @media screen and (max-width: 499.98px) {
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+
+}
+
+.services__block-img {
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    border-radius: 20px;
+    padding: 12px;
+    background-color: $primary-color;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (max-width: 499.98px) {
+        margin: 0 auto;
+    }
+}
+
+.services__block-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+
+    &:not(:last-child) {
+        margin-bottom: 12px;
+    }
+}
+
+.services__block-text {
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+}
+
+.services__call {
+    background-color: $accent-color;
+    color: #fff;
+    border-radius: 24px;
+    text-align: center;
+    padding: 20px;
+
+
+    @media screen and (min-width: 1440px) {
+        padding: 32px;
+    }
+}
+
+.services__button {
+    color: $accent-color;
+    background-color: #fff;
+    padding: 10px 32px;
+
+    @media screen and (max-width: 550px) {
+        font-size: 20px;
+    }
+}

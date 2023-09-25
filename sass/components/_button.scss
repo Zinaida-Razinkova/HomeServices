@@ -1,0 +1,29 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 64px;
+    border-radius: 60px;
+
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.33;
+    color: #fff;
+    transition: all 0.3s;
+
+    border: none;
+
+    @media screen and (max-width: 1700px) {
+        min-height: 48px;
+    }
+
+    @media screen and (max-width: 475px) {
+        font-size: 18px;
+    }
+
+    &:hover {
+        background-color: #1F3584;
+        color: #fff;
+    }
+}

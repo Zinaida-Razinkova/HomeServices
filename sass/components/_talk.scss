@@ -1,0 +1,87 @@
+.talk {
+    background-color: #142257;
+
+    @media screen and (max-width: 768px) {
+        padding-top: 56px;
+    }
+}
+
+.talk__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1440px) {
+        gap: 90px;
+    }
+
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+}
+
+.talk__content {
+    position: relative;
+    text-align: left;
+    padding-top: 105px;
+    padding-bottom: 106px;
+
+    @media screen and (max-width: 1440px) {
+        padding-top: 50px;
+        padding-bottom: 56px;
+    }
+
+    @media screen and (max-width: 768px) {
+        padding-top: 0;
+        text-align: center;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -1px;
+        background: url(../images/talk/decor.png) 0 0 / 83% no-repeat;
+        width: 100%;
+        aspect-ratio: 581 / 44;
+
+        @media screen and (max-width: 768px) {
+            background: url(../images/talk/decor-small.png) 0 0 / 83% no-repeat;
+            top: -57px;
+            transform: translate(10%, -50%);
+        }
+    }
+}
+
+.talk__title {
+    max-width: 662px;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+.talk__text {
+    justify-content: left;
+
+    &:not(:last-child) {
+        margin-bottom: 36px;
+    }
+
+    @media screen and (max-width: 1024px) {
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        justify-content: center;
+    }
+}
+
+.talk__img {
+    justify-content: end;
+    align-items: end;
+}

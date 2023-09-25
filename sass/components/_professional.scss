@@ -1,0 +1,140 @@
+.professional {
+    padding-top: 171px;
+    padding-bottom: 100px;
+
+    @media screen and (max-width: 1440px) {
+        padding: 30px 0;
+    }
+}
+
+.professional__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 50px;
+
+    @media screen and (max-width: 1025px) {
+        flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width: 1482px) {
+        column-gap: 159px;
+    }
+}
+
+.professional__title {
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 1023.98px) {
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+    }
+}
+
+.professional__text {
+    color: $textcolor2;
+
+    &:not(:last-child) {
+        margin-bottom: 56px;
+    }
+
+    @media screen and (max-width: 1023.98px) {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+
+    }
+}
+
+.professional__list {
+    display: grid;
+
+    &:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+    row-gap: 24px;
+
+    @media screen and (min-width: 769px) {
+
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-auto-flow: column;
+        row-gap: 32px;
+        column-gap: 40px;
+
+        &:not(:last-child) {
+            margin-bottom: 56px;
+        }
+    }
+
+
+}
+
+.professional__item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #1F3584;
+
+    @media screen and (max-width: 1023.98px) {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+    }
+}
+
+.professional__item::before {
+    content: '';
+    display: block;
+    flex: 0 0 16;
+    width: 16px;
+    height: 16px;
+    background: url(../images/professional/check.svg) 0 0 no-repeat;
+}
+
+.professional__phone {
+    color: #fff;
+    background-color: $accent-color;
+    border-radius: 12px;
+    padding: 12px 24px;
+
+    @media screen and (min-width: 1024px) {
+        font-size: 20px;
+        border-radius: 24px;
+        padding: 12px 32px;
+    }
+}
+
+.professional__phone a {
+    font-weight: 600;
+
+    @media screen and (min-width: 1024px) {
+        text-decoration-line: underline;
+    }
+
+}
+
+.professional__phone span {
+
+    @media screen and (max-width: 425px) {
+        display: block;
+    }
+}
+
+.professional__img {
+    @media screen and (max-width: 1024px) {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (min-width: 769px) and (min-width: 1025px) {
+        max-width: 40%;
+    }
+}
