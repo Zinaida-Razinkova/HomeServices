@@ -62,11 +62,6 @@ function viewMore() {
     const viewMore = document.querySelector(".blog__button");
 
     currentItems < dataItemsLength ? viewMore.hidden = false : viewMore.hidden = true;
-
-
-    // if (currentItems < dataItemsLength) {
-    //     document.querySelector(".blog__container").insertAdjacentHTML("beforeend", `<button class="blog__button" type="button">View More</button>`);
-    // }
 }
 
 function documentActions(event) {

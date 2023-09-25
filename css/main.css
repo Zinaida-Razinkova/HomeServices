@@ -1658,8 +1658,28 @@ body.backdrop__show .backdrop {
   }
 }
 
-.talk__content {
+.talk__decor {
   position: relative;
+}
+
+.talk__decor-left:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+  background: url(../../images/talk/decor.png) no-repeat;
+  width: 570px;
+  height: 45px;
+}
+@media screen and (max-width: 768px) {
+  .talk__decor-left:before {
+    background: url(../images/talk/decor-small.png) 0 0/83% no-repeat;
+    top: -57px;
+    transform: translate(10%, -50%);
+  }
+}
+
+.talk__content {
   text-align: left;
   padding-top: 105px;
   padding-bottom: 106px;
@@ -1674,22 +1694,6 @@ body.backdrop__show .backdrop {
   .talk__content {
     padding-top: 0;
     text-align: center;
-  }
-}
-.talk__content:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -1px;
-  background: url(../images/talk/decor.png) 0 0/83% no-repeat;
-  width: 100%;
-  aspect-ratio: 581/44;
-}
-@media screen and (max-width: 768px) {
-  .talk__content:before {
-    background: url(../images/talk/decor-small.png) 0 0/83% no-repeat;
-    top: -57px;
-    transform: translate(10%, -50%);
   }
 }
 
