@@ -9,8 +9,9 @@
 .guarantee__decor-left {
     background: url(../images/guarantee/decor-left.png) no-repeat;
     position: absolute;
-    top: 14%;
+    top: 50%;
     left: 0;
+    transform: translate(0%, -50%);
     height: 645px;
     width: 45px;
 
@@ -22,10 +23,11 @@
 .guarantee__decor-right {
     background: url(../images/guarantee/decor-right.png) no-repeat;
     position: absolute;
-    top: 14%;
+    top: 50%;
     right: 0;
     height: 645px;
     width: 45px;
+    transform: translate(0%, -50%);
 
     @media screen and (max-width: 425px) {
         display: none;
