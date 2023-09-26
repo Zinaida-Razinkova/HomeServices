@@ -15,46 +15,46 @@
         gap: 90px;
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         flex-direction: column;
     }
 }
 
-.talk__decor {
-position: relative;
-}
-.talk__decor-left {
-    &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: -2px;
-            background: url(../../images/talk/decor.png) no-repeat;
-            width: 570px;
-            height: 45px;
-    
-            @media screen and (max-width: 768px) {
-                background: url(../images/talk/decor-small.png) 0 0 / 83% no-repeat;
-                top: -57px;
-                transform: translate(10%, -50%);
-            }
-        }
-}
-
 .talk__content {
-    
+    position: relative;
     text-align: left;
     padding-top: 105px;
     padding-bottom: 106px;
 
-    @media screen and (max-width: 1440px) {
-        padding-top: 50px;
-        padding-bottom: 56px;
+    @media screen and (max-width: 1024px) {
+        text-align: center;
+    }
+         @media screen and (max-width: 768px) {
+             padding-top: 0;
+         }
+
+}
+
+.talk__decor {
+    position: absolute;
+    left: 0;
+    top: -11px;
+    background: url(../images/talk/decor.png) no-repeat;
+    width: 581px;
+    height: 45px;
+
+    @media screen and (max-width: 1024px) {
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 
     @media screen and (max-width: 768px) {
-        padding-top: 0;
-        text-align: center;
+        background: url(../images/talk/decor-small.png) no-repeat;
+        top: -57px;
+        width: 299px;
+        height: 45px;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 
 }
@@ -82,7 +82,7 @@ position: relative;
         }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 1024px) {
         justify-content: center;
     }
 }

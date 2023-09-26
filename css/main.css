@@ -166,11 +166,11 @@
 @media screen and (max-width: 768px) {
   .backdrop {
     position: fixed;
-    top: 60px;
+    top: 56px;
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1652,48 +1652,51 @@ body.backdrop__show .backdrop {
     gap: 90px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .talk__container {
     flex-direction: column;
   }
 }
 
-.talk__decor {
-  position: relative;
-}
-
-.talk__decor-left:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -2px;
-  background: url(../../images/talk/decor.png) no-repeat;
-  width: 570px;
-  height: 45px;
-}
-@media screen and (max-width: 768px) {
-  .talk__decor-left:before {
-    background: url(../images/talk/decor-small.png) 0 0/83% no-repeat;
-    top: -57px;
-    transform: translate(10%, -50%);
-  }
-}
-
 .talk__content {
+  position: relative;
   text-align: left;
   padding-top: 105px;
   padding-bottom: 106px;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1024px) {
   .talk__content {
-    padding-top: 50px;
-    padding-bottom: 56px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
   .talk__content {
     padding-top: 0;
-    text-align: center;
+  }
+}
+
+.talk__decor {
+  position: absolute;
+  left: 0;
+  top: -11px;
+  background: url(../images/talk/decor.png) no-repeat;
+  width: 581px;
+  height: 45px;
+}
+@media screen and (max-width: 1024px) {
+  .talk__decor {
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}
+@media screen and (max-width: 768px) {
+  .talk__decor {
+    background: url(../images/talk/decor-small.png) no-repeat;
+    top: -57px;
+    width: 299px;
+    height: 45px;
+    left: 50%;
+    transform: translate(-50%, 0%);
   }
 }
 
@@ -1715,7 +1718,7 @@ body.backdrop__show .backdrop {
     margin-bottom: 24px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .talk__text {
     justify-content: center;
   }
