@@ -122,6 +122,12 @@
     gap: 24px;
 }
 
+.footer__contact-item {
+    &:hover {
+        scale: 1.2;
+    }
+}
+
 .footer__body {
     display: flex;
     align-items: start;
