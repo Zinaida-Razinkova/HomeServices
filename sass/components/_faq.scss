@@ -113,6 +113,7 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 1.33;
+    margin-bottom: 16px;
 
     @media screen and (max-width: 767.98px) {
         font-size: 18px;
@@ -133,4 +134,12 @@
     max-width: 1100px;
     color: #737373;
     font-size: 16px;
+}
+
+summary {
+    list-style: none;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
